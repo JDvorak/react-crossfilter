@@ -1,0 +1,39 @@
+{
+  "name": "react-crossfilter",
+  "version": "1.0.0",
+  "description": "React Crossfilter State Providers",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node -r @babel/register -r jsdom-global/register  test.js",
+    "test:fast": "NODE_ENV=test node -r @babel/register -r jsdom-global/register test.js",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "jdvorak/react-crossfilter",
+  "keywords": [
+    "react",
+    "crossfilter",
+    "stateprovider",
+    "hooks"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "crossfilter2": "^1.4.7",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "7.0.0",
+    "dependency-check": "^4.1.0",
+    "enzyme": "3.7.0",
+    "enzyme-adapter-react-16": "1.14.0",
+    "istanbul": "^0.4.5",
+    "jsdom": "^15.1.1",
+    "jsdom-global": "^3.0.2",
+    "standard": "^12.0.1",
+    "tape": "^4.10.2"
+  }
+}
